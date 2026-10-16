@@ -13,7 +13,7 @@ fun isValidTriangle(triangle: Triangle): Boolean {  // To checks whether three s
 }
 // to calculate the area of the triangle from its lengths
 fun triangleArea(triangle: Triangle): Double {
-    if (!isValidTriangle(triangle)) return 0.0 // Invalid triangle so 0
+   if (!isValidTriangle(triangle)) return 0.0 // Invalid triangle so 0
     val (y, x, z) = triangle 
     val s = (y + x + z) / 2 
     return sqrt(s * (s - y) * (s - x) * (s - z)) // Heron's formula gives the area
